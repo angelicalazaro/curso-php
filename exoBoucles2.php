@@ -35,12 +35,12 @@ while (true) {
 // ECHO Le magasin est ouvert de 9h à 12h et de 14h à 18h
 
 echo 'Le magasin est ouvert de ';
-// $k c'est l'index du tableau
+// $k c'est l'index
 foreach ($creneaux as $k => $creneau) {
     if ($k > 0) {
         echo ' et de';
     }
-    echo " {$creneau[0]}h à {$creneau[1]}h";
+    echo "{$creneau[0]}h à {$creneau[1]}h";
 }
 
 /*
