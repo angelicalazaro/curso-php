@@ -9,6 +9,7 @@ Cela pourra être d'autant plus utile s'il rencontre à nouveau ce système de c
 
 Voici comment procéder :
 
+
     Calculer la longueur de la chaîne et la diviser par 2, tu obtiendras ainsi le "chiffre-clé".
     Récupère ensuite la sous-chaîne de la longueur du chiffre-clé en commençant à partir du 6ème caractère.
     Remplace les chaînes '@#?' par un espace.
@@ -19,4 +20,22 @@ Lance ton code sur chacun des messages suivants, et poste ensuite le code PHP qu
     message 1 : 0@sn9sirppa@#?ia'jgtvryko1
     message 2 : q8e?wsellecif@#?sel@#?setuotpazdsy0*b9+mw@x1vj
     message 3 : aopi?sgnirts@#?sedhtg+p9l!
-*\
+
+*/ 
+function decrypt($message) {
+    $longueur = strlen($message);
+    $chiffreCle = ($longueur / 2);
+    $sousChaine = substr($message, 5, $chiffreCle);
+    $remplace = str_replace("@#?", " ", $sousChaine);
+    $inverse = strrev($remplace);
+
+    return $inverse;
+}
+
+$message1 = "0@sn9sirppa@#?ia'jgtvryko1";
+$message2 = "q8e?wsellecif@#?sel@#?setuotpazdsy0*b9+mw@x1vj";
+$message3 = "aopi?sgnirts@#?sedhtg+p9l!";
+
+echo decrypt($message1) . "\n";
+echo decrypt($message2) . "\n";
+echo decrypt($message3) . "\n";
