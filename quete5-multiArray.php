@@ -48,5 +48,5 @@ foreach ($movies as $title => $actors) {
         echo '- ' . $actor . PHP_EOL;
     }
 
-    echo PHP_EOL;
+    echo PHP_EOL; // ajoute une ligne vide qui separe les films 
 }
