@@ -9,9 +9,9 @@ $eleve['prenom'] = 'Marie';
 // adding a new note
 $eleve['notes'][3] = 18;
 // Displaying the student's full name
-echo $eleve['prenom'] . ' ' . $eleve['nom'];
+//echo $eleve['prenom'] . ' ' . $eleve['nom'];
 // Displaying the array of notes
-print_r($eleve['notes']);
+//print_r($eleve['notes']);
 // An array in an array
 $classe = [
     [
@@ -31,4 +31,4 @@ $classe = [
     ]
 ];
 // displaying second student's first note
-echo $classe[1]['notes'][0];
+print_r($classe[1]);

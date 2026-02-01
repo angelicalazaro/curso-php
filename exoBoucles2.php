@@ -43,7 +43,7 @@ foreach ($creneaux as $k => $creneau) {
     echo "{$creneau[0]}h à {$creneau[1]}h";
 }
 
-/*
+
 // on demande à l'utilisateur de rentrer une heure
 $heure = readline("A quelle heure voulez vous visiter le magasin ?");
 // savoir si on a un creneau qui est valable
@@ -51,6 +51,7 @@ $creneauTrouve = false;
 
 // parcourir chaquen un de mes creneaux
 // $creneau prendra la valeur du premier tableau [0] et ensuite du deuxième [1]
+
 foreach($creneaux as $creneau) {
     if ($heure >= $creneau[0] && $heure <= $creneau[1]) {
         $creneauTrouve = true;
@@ -63,4 +64,3 @@ if ($creneauTrouve) {
 } else {
     echo 'Le magasin sera fermé';
 }
-*/
